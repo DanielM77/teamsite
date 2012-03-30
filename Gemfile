@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
-
+gem 'bootstrap-sass', '2.0.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -21,6 +21,19 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development do
+	gem 'rspec-rails'
+  gem 'annotate','2.4.1.beta1'
+end
+group :test do
+	gem 'rspec-rails'
+	gem 'webrat'
+	#gem 'autotest'
+  #gem 'autotest-rails-pure'
+  #gem 'autotest-fsevent'
+  #gem 'autotest-growl'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

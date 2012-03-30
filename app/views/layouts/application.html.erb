@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Teamsite</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <title>Teamsite | <%= @title  %></title>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/stylesheets' %>
+  <%= javascript_include_tag "application" %>
+  
 </head>
 <body>
-
-<%= yield %>
-
+	<%= render 'layouts/header' %> 
+<div class = "container">
+		<%= yield %>
+		<%= render 'layouts/footer' %>
+</div>		
 </body>
 </html>
