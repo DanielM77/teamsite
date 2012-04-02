@@ -21,7 +21,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+group :production do
+	gem 'pg'
+end
 group :development do
 	gem 'rspec-rails'
   gem 'annotate','2.4.1.beta1'
