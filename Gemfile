@@ -5,8 +5,6 @@ gem 'bootstrap-sass', '2.0.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,10 +23,12 @@ group :production do
 	gem 'pg'
 end
 group :development do
+	gem 'sqlite3'
 	gem 'rspec-rails'
   gem 'annotate','2.4.1.beta1'
 end
 group :test do
+	gem 'sqlite3'
 	gem 'rspec-rails'
 	gem 'webrat'
 	#gem 'autotest'
