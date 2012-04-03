@@ -11,7 +11,10 @@
 #
 
 class User < ActiveRecord::Base
-	attr_accessible :name, :full_name, :email
-
-	validates :name, :presence => true
+	attr_accessible :name, :full_name, :email, :password, :password_confirmation
+	has_secure_password
+	validates :name, presence: true, uniqueness: true
+	validates :email, presence: true, uniqueness: true
+	validates :password, length: {minimum: 6}
+	validates :password_confirmation, presence: true
 end
