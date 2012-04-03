@@ -31,6 +31,7 @@ group :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
 	gem 'webrat'
+	gem 'factory_girl_rails', '1.4.0'
 	#gem 'autotest'
   #gem 'autotest-rails-pure'
   #gem 'autotest-fsevent'

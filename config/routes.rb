@@ -1,6 +1,7 @@
 Teamsite::Application.routes.draw do
 
-  match '/signup', to: 'users#new'
+	resources :users
+	match '/signup', to: 'users#new'
   match '/home', to: 'pages#home'
   match '/contact', to: 'pages#contact'
   match '/help', to: 'pages#help'
